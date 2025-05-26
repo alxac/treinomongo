@@ -1,0 +1,7 @@
+con:
+
+mongodb+srv://alxac:8Nl5iBiRq34OaRw9@alxac.lcryj.mongodb.net/
+
+
+fonte:
+https://alunos.fullstackclub.com.br/area/produto/item/5407402
