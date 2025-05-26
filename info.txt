@@ -1,6 +1,6 @@
 con:
 
-mongodb+srv://alxac:8Nl5iBiRq34OaRw9@alxac.lcryj.mongodb.net/
+mongodb+srv://user:senha@alxac.lcryj.mongodb.net/
 
 
 fonte:
