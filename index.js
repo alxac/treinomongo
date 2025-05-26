@@ -11,7 +11,7 @@ connectToDatabase();
 // // // require("./modules/fs");
 // // // require("./modules/http");
 
-// require("./modules/express");
+require("./modules/express");
 
 const person = new Person("Felipe");
 console.log(person.sayMyName());

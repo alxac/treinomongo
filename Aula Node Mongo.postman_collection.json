@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "dedc22d4-0ea4-44a4-bd8c-afc6edf7326e",
+		"name": "Aula Node Mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3667174",
+		"_collection_link": "https://red-spaceship-974745.postman.co/workspace/Team-Workspace~1d4e6929-9fc3-44b8-8d08-fe2540acecbe/collection/3667174-dedc22d4-0ea4-44a4-bd8c-afc6edf7326e?action=share&source=collection_link&creator=3667174"
+	},
+	"item": [
+		{
+			"name": "Listar usuários",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar usuário",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"firstName\": \"Teste\",\r\n    \"lastName\": \"Testando\",\r\n    \"email\": \"teste@teste1.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/6834bd68bfdf52851fd36296",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6834bd68bfdf52851fd36296"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar usuário",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/6834bef7bfdf52851fd36299",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6834bef7bfdf52851fd36299"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar usuários",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"firstName\": \"Teste\",\r\n    \"lastName\": \"Testando\",\r\n    \"email\": \"teste@teste1.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar usuário",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"firstName\": \"Teste 11111111\",\r\n    \"lastName\": \"Testando11111111111 \",\r\n    \"email\": \"teste@teste111111.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/6834bd68bfdf52851fd36296",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"6834bd68bfdf52851fd36296"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
